@@ -1,6 +1,7 @@
 import {
-  // methods,
-  // methods,
+  evensOnlyAndDoubleArray,
+  someNumbersAreOdd,
+  arraySum,
   evensOnlyArray,
   doubleArray,
   originalArray
@@ -21,5 +22,23 @@ describe('doubleArray', () => {
 describe('evensOnlyArray', () => {
   test('it should print even values from the array', () => {
     expect(evensOnlyArray([1,2,3,4,6,7,8])).toEqual([2,4,6,8])
+  })
+})
+
+describe('arraySum', () => {
+  test('It should add up the numbers in the array', () =>{
+    expect(arraySum([1,2,3,4])).toEqual(10)
+  })
+})
+
+describe('someNumbersAreOdd', () => {
+  test("it should return true if here are odd numbers", () => {
+    expect(someNumbersAreOdd([2,4,6,8,10,11])).toEqual(true)
+  })
+})
+
+describe('evensOnlyAndDoubleArray' , () => {
+  test("it should print doubled and even numbers", () => {
+    expect(evensOnlyAndDoubleArray([1,2,3,4])).toEqual([4,8])
   })
 })

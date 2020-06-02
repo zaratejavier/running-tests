@@ -2,7 +2,7 @@ export const originalArray = (arr) =>{
   return arr
 };
 
-// doubleArray(numberArray) // => [2,4,6,8];  hint use map 
+// doubleArray(numberArray) // => [2,4,6,8];  hint use map √
 export const doubleArray = (arr) => {
   let doubledArr = arr.map((number) => {
     return number * 2
@@ -11,7 +11,7 @@ export const doubleArray = (arr) => {
 }
 
 // // return array with all even numbers
-// evensOnlyArray(numberArray) // => [2,4];  hint use filter 
+// evensOnlyArray(numberArray) // => [2,4];  hint use filter √
 export const evensOnlyArray = (arr) => {
 
   let even = arr.filter(val => {
@@ -22,12 +22,21 @@ export const evensOnlyArray = (arr) => {
 
 
 // // return array with sum of numbers
-// arraySum(numberArray) // => 10;  hint use reduce
+// arraySum(numberArray) // => 10;  hint use reduce √
 export const arraySum = (arr) => {
 
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
   return arr.reduce(reducer)
 }
+
+// // return true if one or more items in array are odd
+// someNumbersAreOdd(numberArray) // => true; use some √
+export const someNumbersAreOdd = (arr) => {
+  const odd = (element) => element % 2 !== 0;
+
+  return arr.some(odd);
+}
+
 
 
 
@@ -58,10 +67,10 @@ export const arraySum = (arr) => {
 // arraySum(numberArray) // => 10;  hint use reduce
 
 // // return true if every item greater than 0
-// allNumbersGreaterThanZero(numberArray) // => true; use every
+// allNumbersGreaterThanZero(numberArray) // => true; use every √
 
 // // return true if one or more items in array are odd
-// someNumbersAreOdd(numberArray) // => true; use some
+// someNumbersAreOdd(numberArray) // => true; use some √
 
 // // return array double and even
 // evensOnlyAndDoubleArray(numberArray) // => [4,8]; // use map and filter
