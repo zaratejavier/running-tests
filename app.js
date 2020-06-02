@@ -37,6 +37,16 @@ export const someNumbersAreOdd = (arr) => {
   return arr.some(odd);
 }
 
+// // return array double and even
+// evensOnlyAndDoubleArray(numberArray) // => [4,8]; // use map and filter √
+export const evensOnlyAndDoubleArray = (arr) => {
+  let doubleEven = arr.filter(val => {
+    return val % 2 === 0;
+  }).map((number) => {
+    return number * 2
+  })
+  return doubleEven;
+}
 
 
 
