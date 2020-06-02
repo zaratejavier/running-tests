@@ -5,7 +5,8 @@ import {
   arraySum,
   evensOnlyArray,
   doubleArray,
-  originalArray
+  originalArray,
+  sortArray
 } from '../app'
 // hint of look in before_each before_all
 
@@ -48,5 +49,11 @@ describe('evensOnlyAndDoubleArray' , () => {
 describe('findItem', () => {
   test("Return not found if number doesnt exist", () => {
     expect(findItem([1,2,3,4],3)).toEqual(3)
+  })
+})
+
+describe('sortArray', () => {
+  test("Reverse the array", () => {
+    expect(sortArray([1,2,3,4])).toEqual([4,3,2,1])
   })
 })

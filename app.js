@@ -48,7 +48,7 @@ export const evensOnlyAndDoubleArray = (arr) => {
   return doubleEven;
 }
 
-// // find an item method return 'not found' if not found
+// // find an item method return 'not found' if not found√
 // findItem(numberArray, 1) //=> 1
 
 export const findItem = (arr,num) =>{
@@ -64,6 +64,11 @@ export const findItem = (arr,num) =>{
   }
 }
 
+// // sort array desc order
+// sortArray(numberArray) //=> [4,3,2,1] *desc* √
+export const sortArray = (arr) =>{
+  return arr.reverse();
+}
 
 
 // EXPORT ALL AS FUNCTIONS AND KEEP THE NAMES THE SAME
@@ -102,7 +107,7 @@ export const findItem = (arr,num) =>{
 // evensOnlyAndDoubleArray(numberArray) // => [4,8]; // use map and filter √
 
 // // find an item method return 'not found' if not found
-// findItem(numberArray, 1) //=> 1
+// findItem(numberArray, 1) //=> 1 √
 
 // // sort array desc order
 // sortArray(numberArray) //=> [4,3,2,1] *desc*
