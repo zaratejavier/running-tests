@@ -70,6 +70,20 @@ export const sortArray = (arr) =>{
   return arr.reverse();
 }
 
+//-------------------------------------------------------------------------------------
+// // -----BONUS------
+// // ARRAY ITERATOR METHODS ON Objects with name age 
+//-------------------------------------------------------------------------------
+
+// moreThan100Likes(artists)// =>[ {name: 'c', likes:101} ]; // use filter
+
+export const moreThan100Likes = (artists) => {
+  let artistas = artists.filter(artist => artist.likes >= 101 );
+
+  return artistas
+}
+
+
 
 // EXPORT ALL AS FUNCTIONS AND KEEP THE NAMES THE SAME
 
@@ -141,3 +155,13 @@ export const sortArray = (arr) =>{
 
 // // returns array of artist sorted by likes
 // sortArtistByName(artists)
+
+
+
+let cities = [
+  {name: 'Los Angeles', population: 3792621},
+  {name: 'New York', population: 8175133},
+  {name: 'Chicago', population: 2695598},
+  {name: 'Houston', population: 2099451},
+  {name: 'Philadelphia', population: 1526006}
+];

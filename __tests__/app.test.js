@@ -6,7 +6,8 @@ import {
   evensOnlyArray,
   doubleArray,
   originalArray,
-  sortArray
+  sortArray,
+  moreThan100Likes
 } from '../app'
 // hint of look in before_each before_all
 
@@ -57,3 +58,13 @@ describe('sortArray', () => {
     expect(sortArray([1,2,3,4])).toEqual([4,3,2,1])
   })
 })
+
+describe('moreThan100Likes', () => {
+  test("Artist with more than 100 likes", () => {
+    expect(moreThan100Likes([
+    {name: 'a', likes:100},
+    {name: 'b', likes:99},
+    {name: 'c', likes:101}, ])).toEqual([{name: 'c', likes:101}])
+  })
+})
+
