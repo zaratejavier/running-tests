@@ -48,6 +48,22 @@ export const evensOnlyAndDoubleArray = (arr) => {
   return doubleEven;
 }
 
+// // find an item method return 'not found' if not found
+// findItem(numberArray, 1) //=> 1
+
+export const findItem = (arr,num) =>{
+
+  let item = arr.find(val => {
+    return val == num
+  })
+  if (item ){
+    return item
+  }
+  else {
+    return "Not found"
+  }
+}
+
 
 
 // EXPORT ALL AS FUNCTIONS AND KEEP THE NAMES THE SAME
@@ -83,7 +99,7 @@ export const evensOnlyAndDoubleArray = (arr) => {
 // someNumbersAreOdd(numberArray) // => true; use some √
 
 // // return array double and even
-// evensOnlyAndDoubleArray(numberArray) // => [4,8]; // use map and filter
+// evensOnlyAndDoubleArray(numberArray) // => [4,8]; // use map and filter √
 
 // // find an item method return 'not found' if not found
 // findItem(numberArray, 1) //=> 1

@@ -1,4 +1,5 @@
 import {
+  findItem,
   evensOnlyAndDoubleArray,
   someNumbersAreOdd,
   arraySum,
@@ -7,6 +8,7 @@ import {
   originalArray
 } from '../app'
 // hint of look in before_each before_all
+
 describe('originalArray Test', ()=> {
   test('originalArray should return it self', ()=>{
     expect(originalArray([1,2,3,4])).toEqual([1,2,3,4])
@@ -40,5 +42,11 @@ describe('someNumbersAreOdd', () => {
 describe('evensOnlyAndDoubleArray' , () => {
   test("it should print doubled and even numbers", () => {
     expect(evensOnlyAndDoubleArray([1,2,3,4])).toEqual([4,8])
+  })
+})
+
+describe('findItem', () => {
+  test("Return not found if number doesnt exist", () => {
+    expect(findItem([1,2,3,4],3)).toEqual(3)
   })
 })
