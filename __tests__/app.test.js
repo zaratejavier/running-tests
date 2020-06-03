@@ -7,7 +7,8 @@ import {
   doubleArray,
   originalArray,
   sortArray,
-  moreThan100Likes
+  moreThan100Likes,
+  justArtistMoreThan100Likes
 } from '../app'
 // hint of look in before_each before_all
 
@@ -68,3 +69,11 @@ describe('moreThan100Likes', () => {
   })
 })
 
+describe('justArtistMoreThan100Likes', () => {
+  test("Get the artist name with more than 100 likes", () => {
+    expect(justArtistMoreThan100Likes([
+      {name: 'a', likes:100},
+      {name: 'b', likes:99},
+      {name: 'c', likes:101}, ])).toEqual(['c'])
+  })
+})

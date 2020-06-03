@@ -75,7 +75,7 @@ export const sortArray = (arr) =>{
 // // ARRAY ITERATOR METHODS ON Objects with name age 
 //-------------------------------------------------------------------------------
 
-// moreThan100Likes(artists)// =>[ {name: 'c', likes:101} ]; // use filter
+// moreThan100Likes(artists)// =>[ {name: 'c', likes:101} ]; // use filter √
 
 export const moreThan100Likes = (artists) => {
   let artistas = artists.filter(artist => artist.likes >= 101 );
@@ -83,7 +83,14 @@ export const moreThan100Likes = (artists) => {
   return artistas
 }
 
+// //  return an array of strings of artist name
+// justArtistMoreThan100Likes(artists) //=> ['c']; // use filter
 
+export const justArtistMoreThan100Likes = (artists) => {
+  let artistas = artists.filter(artist => {
+    return artist.likes >= 101}).map(artist => artist.name)
+  return artistas
+}
 
 // EXPORT ALL AS FUNCTIONS AND KEEP THE NAMES THE SAME
 
@@ -142,7 +149,7 @@ export const moreThan100Likes = (artists) => {
 // //   {name: 'c', likes:198},
 // //   {name: 'c', likes:202},  
 // // ]; 
-// moreThan100Likes(artists)// =>[ {name: 'c', likes:101} ]; // use filter
+// moreThan100Likes(artists)// =>[ {name: 'c', likes:101} ]; // use filter √
 
 // //  return an array of strings of artist name
 // justArtistMoreThan100Likes(artists) //=> ['c']; // use filter
@@ -155,13 +162,3 @@ export const moreThan100Likes = (artists) => {
 
 // // returns array of artist sorted by likes
 // sortArtistByName(artists)
-
-
-
-let cities = [
-  {name: 'Los Angeles', population: 3792621},
-  {name: 'New York', population: 8175133},
-  {name: 'Chicago', population: 2695598},
-  {name: 'Houston', population: 2099451},
-  {name: 'Philadelphia', population: 1526006}
-];
